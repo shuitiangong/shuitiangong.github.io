@@ -3174,7 +3174,7 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(/pic/yande.re415888.png);
+    --default-bg: url(https://tsundora.com/image/2015/08/saenai_heroine_no_sodatekata_304.jpg);
     --darkmode-bg:url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
     --mobileday-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
     --mobilenight-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
