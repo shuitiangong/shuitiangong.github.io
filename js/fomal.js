@@ -3171,7 +3171,12 @@ let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 
 // 更换背景(自己的代码)
 if (localStorage.getItem("blogbg") != undefined) {
-  setBg(localStorage.getItem("blogbg"));
+  document.getElementById("defineBg").innerText = `:root{
+    --default-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
+    --darkmode-bg:url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
+    --mobileday-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
+    --mobilenight-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
+  }`;
 } else {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
@@ -3189,6 +3194,7 @@ function changeBg(s) {
 }
 // 设置背景属性
 function setBg(s) {
+  console.log(s);
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: ${s};
     --darkmode-bg: ${s};
