@@ -3171,7 +3171,12 @@ let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 
 // 更换背景(自己的代码)
 if (localStorage.getItem("blogbg") != undefined) {
-  setBg(localStorage.getItem("blogbg"));
+  document.getElementById("defineBg").innerText = `:root{
+    --default-bg: url(https://bing.img.run/m.php);
+    --darkmode-bg:url(https://bing.img.run/m.php);
+    --mobileday-bg: url(https://bing.img.run/m.php);
+    --mobilenight-bg: url(https://bing.img.run/m.php);
+  }`;
 } else {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url(https://bing.img.run/m.php);
