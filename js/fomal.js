@@ -3174,10 +3174,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://tsundora.com/image/2015/08/saenai_heroine_no_sodatekata_304.jpg);
-    --darkmode-bg:url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
-    --mobileday-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
-    --mobilenight-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
+    --default-bg: url(https://bing.img.run/m.php);
+    --darkmode-bg:url(https://bing.img.run/m.php);
+    --mobileday-bg: url(https://bing.img.run/m.php);
+    --mobilenight-bg: url(https://bing.img.run/m.php);
   }`;
 }
 // 切换背景主函数
