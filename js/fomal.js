@@ -3171,18 +3171,13 @@ let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 
 // 更换背景(自己的代码)
 if (localStorage.getItem("blogbg") != undefined) {
-  document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://bing.img.run/m.php);
-    --darkmode-bg:url(https://bing.img.run/m.php);
-    --mobileday-bg: url(https://bing.img.run/m.php);
-    --mobilenight-bg: url(https://bing.img.run/m.php);
-  }`;
+  setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://bing.img.run/m.php);
-    --darkmode-bg:url(https://bing.img.run/m.php);
-    --mobileday-bg: url(https://bing.img.run/m.php);
-    --mobilenight-bg: url(https://bing.img.run/m.php);
+    --default-bg: url(https://tsundora.com/image/2015/08/saenai_heroine_no_sodatekata_304.jpg);
+    --darkmode-bg:url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
+    --mobileday-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
+    --mobilenight-bg: url(https://ani4u.org/wp-content/uploads/2017/03/382145.jpg);
   }`;
 }
 // 切换背景主函数
@@ -3412,7 +3407,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://tsundora.com/image/2015/08/saenai_heroine_no_sodatekata_304.jpg)" class="imgbox" onclick="changeBg('url(https://tsundora.com/image/2015/08/saenai_heroine_no_sodatekata_304.jpg)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
               </div>
             </details>
 
